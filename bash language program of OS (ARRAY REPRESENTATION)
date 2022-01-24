@@ -1,0 +1,16 @@
+declare -a array
+array=(5 9 6 7 8 3 2 4)
+for i in "${array[@]}"
+do 
+echo $i
+done
+echo display first element
+echo ${array:0}
+echo number of elements
+echo ${#array[*]}
+echo replace 7 with 10
+echo ${array[@]//7/10}
+echo display elements except first
+echo ${array[@]:1}
+echo display some elements
+echo ${array[@]:1:4}
